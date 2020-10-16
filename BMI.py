@@ -4,7 +4,7 @@ def bmi(height,mass):
 	b_index = mass/(height**2)
 	return round(b_index,2)
 loop="y"
-while(loop=='y' or loop=='Y'):
+while(loop=='yes' or loop=='YES'):
 	
 	height = float(input("Enter the height in meters:"))
 	mass = float(input("Enter the weight in kg:"))
@@ -18,6 +18,6 @@ while(loop=='y' or loop=='Y'):
 		print("Over Weight")
 	elif(b_index>30.0):
 		print("Obesity")
-	print("Do you want to continue(y/n): ")
+	print("Do you want to continue(yes/n): ")
 	loop=input()
 
