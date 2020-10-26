@@ -60,7 +60,7 @@ def put_dog_filter(dog,fc,x,y,w,h):
 def face(x):
 	
 	ch=x
-	cascPath = r"C:\Users\balaji\AppData\Local\Programs\Python\Python38\Lib\site-packages\cv2\data\haarcascade_frontalface_default.xml"  # for face detection
+	cascPath = r".\haarcascade_frontalface_default.xml"  # for face detection
 
 	faceCascade = cv2.CascadeClassifier(cascPath)
 	log.basicConfig(filename='webcam.log',level=log.INFO)
